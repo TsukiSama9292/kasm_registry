@@ -2,6 +2,10 @@
   "description": "For team members",
   "docker_registry": "https://index.docker.io/v1/",
   "image_src": "docker-ubuntu.png",
+  "cores": 6,
+  "memory": 8192,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Quotas",
   "run_config": {
     "hostname": "kasm",
     "privileged": true
@@ -25,7 +29,7 @@
       "image": "tsukisama9292/ubuntu-jammy-dind:1.16.0-latest",
       "uncompressed_size_mb": 3600,
       "available_tags": [
-        "develop"
+        "1.16.0-rolling-daily"
       ]
     }
   ]
