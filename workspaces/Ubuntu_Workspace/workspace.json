@@ -1,0 +1,32 @@
+{
+  "description": "For team members",
+  "docker_registry": "https://index.docker.io/v1/",
+  "image_src": "docker-ubuntu.png",
+  "run_config": {
+    "hostname": "kasm",
+    "privileged": true
+  },
+  "exec_config": {
+    "first_launch": {
+      "user": "root",
+      "cmd": "bash -c 'echo \"kasm-user  ALL=(ALL) NOPASSWD: ALL\" >> /etc/sudoers && passwd --delete kasm-user'"
+    }
+  },
+  "categories": [
+    "Desktop"
+  ],
+  "friendly_name": "Ubuntu Workspace",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.15.x",
+      "image": "tsukisama9292/ubuntu-jammy-dind:1.16.0-latest",
+      "uncompressed_size_mb": 3600,
+      "available_tags": [
+        "develop"
+      ]
+    }
+  ]
+}
