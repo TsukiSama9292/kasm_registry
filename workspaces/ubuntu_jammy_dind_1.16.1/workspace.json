@@ -31,6 +31,14 @@
       "available_tags": [
         "1.16.1-rolling-daily"
       ]
+    },
+    {
+      "version": "1.17.x",
+      "image": "tsukisama9292/ubuntu-jammy-dind:1.16.1-rolling-daily",
+      "uncompressed_size_mb": 3600,
+      "available_tags": [
+        "1.16.1-rolling-daily"
+      ]
     }
   ]
 }
