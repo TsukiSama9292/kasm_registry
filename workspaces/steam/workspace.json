@@ -7,8 +7,7 @@
   "gpu_count": 0,
   "cpu_allocation_method": "Quotas",
   "run_config": {
-    "hostname": "kasm",
-    "privileged": false
+    "hostname": "kasm"
   },
   "categories": [
     "Desktop"
